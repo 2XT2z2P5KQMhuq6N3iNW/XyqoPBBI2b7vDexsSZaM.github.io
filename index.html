@@ -81,16 +81,10 @@ $( "#iframe" ).load(function() {
         if (document.title !== "") {
     $("#HEADEVIL").text("👺 " + document.title + " 👺");
         };
-        
-        
-        var k = $('#iframe').contents().find('body').css('background');
-        var l = $('#iframe').contents().find('body').css('background-image');
-        var o = $('#iframe').contents().find('body').css('background-color');
-        $('body').css('background', k);
-        $('body').css('background-image', l);
-        $('body').css('background-color', o);
 
-        $('a').css('background', k);
+$('body').css('background', $('#iframe').contents().find('body').css('background'));
+
+        $('a').css('background', $('#iframe').contents().find('body').css('background'));
 $('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
         $('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
         $('#HEADEVIL').css('color', $('#iframe').contents().find('h6').css('color'));
