@@ -69,11 +69,6 @@ html {
           x.style.display = "none";
         }
       };
-
-  $("a").click(function(){
-    $("iframe").empty();
-  });
-
     </script>
   </head>
 
@@ -111,7 +106,15 @@ $('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
         
         if (l == "none" && o == "rgba(0, 0, 0, 0)") {
         $('a').css('background', 'white');
-        };
+        $('body').css('background', 'white');
+      
+
+} else {
+
+$('body').css('background', $('#iframe').contents().find('body').css('background'));
+      
+
+};
                         $('#iframe').contents().find('body').css('background', 'unset');
 
       };
