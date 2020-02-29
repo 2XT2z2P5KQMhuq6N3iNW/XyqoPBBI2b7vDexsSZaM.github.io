@@ -108,8 +108,9 @@ $('a').css('color', $('#iframe').contents().find('a').css('color'));
 
 };
                       $('#iframe').contents().find('body').css('background', 'unset');
-
-
+$('#iframe').contents().find('a[href*="/http/"]').each(function() {
+    alert('Contains question mark');
+});
       });
 
     </script>
