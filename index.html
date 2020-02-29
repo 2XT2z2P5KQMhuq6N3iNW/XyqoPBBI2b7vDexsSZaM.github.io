@@ -105,7 +105,9 @@ $('a').css('color', $('#iframe').contents().find('a').css('color'));
         if (l == "none" && o == "rgba(0, 0, 0, 0)") {
         $('a').css('background', 'white');
       };
+          $('body').css('background', $('#iframe').contents().find('body').css('background'));
 
+$('#iframe').contents().find('body').css('background', 'unset');
 });
     </script>
 
