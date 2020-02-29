@@ -71,7 +71,7 @@ html {
     <iframe id="iframe" name="iframe" src="top.html" frameBorder="0"></iframe>
 
     <script>
-      document.getElementById('iframe').onload = function() {
+$( "#iframe" ).load(function() {
  alert($('#iframe').contents().find('body').css('background'));
  alert($('#iframe').contents().find('body').css('background-image'));
 alert($('#iframe').contents().find('body').css('background-color'));
