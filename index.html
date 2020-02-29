@@ -108,11 +108,15 @@ $('a').css('color', $('#iframe').contents().find('a').css('color'));
   
           if (l == "none") {
         $('body').css('background-color', $('#iframe').contents().find('body').css('background-color'));
+                    $('body').css('background', k);
+
       };
   
   
             if (l !== "none") {
         $('body').css('background-image', $('#iframe').contents().find('body').css('background-image'));
+                      $('body').css('background', k);
+
       };
                       $('#iframe').contents().find('body').css('background', 'unset');
 $('#iframe').contents().find("a[href='^/http/'" ).each(function() {
