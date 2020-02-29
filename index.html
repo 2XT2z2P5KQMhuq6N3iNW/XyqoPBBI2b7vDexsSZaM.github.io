@@ -89,9 +89,7 @@ html {
   //      alert($('#iframe').contents().find('body').css('background'));
      //           alert($('#iframe').contents().find('body').css('background-image'));
    //             alert($('#iframe').contents().find('body').css('background-color'));
-$('body').css('background', $('#iframe').contents().find('body').css('background'));
-        $('a').css('background', $('#iframe').contents().find('body').css('background'));
-$('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
+
 
         $('#iframe').contents().find('body').css('background', 'unset');
  $('#iframe').contents().find('head').prepend("<style> * {    max-width: 100% !important;    word-break: break-word;    word-wrap: break-word;    box-sizing: border-box;}   ::-webkit-scrollbar {        display: none !important;        width: 0px;      }    </style>");
@@ -99,6 +97,12 @@ $('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
         if (document.title !== "") {
     $("#HEADEVIL").text("👺 " + document.title + " 👺");
         };
+        
+        
+        var k = $('#iframe').contents().find('body').css('background');
+        $('body').css('background', k);
+        $('a').css('background', k);
+$('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
       };
 
     </script>
