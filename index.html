@@ -118,6 +118,9 @@ $('a').css('color', $('#iframe').contents().find('a').css('color'));
 $('#iframe').contents().find("a[href='^/http/'" ).each(function() {
     alert('Contains question mark');
 });
+  
+$('#iframe').contents().find( "a[href*='http']" ).target( "_blank" );
+});
       });
 
     </script>
