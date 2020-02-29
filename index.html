@@ -99,10 +99,16 @@ html {
         
         
         var k = $('#iframe').contents().find('body').css('background');
+        var l = $('#iframe').contents().find('body').css('background-image');
+        var o = $('#iframe').contents().find('body').css('background-color');
         $('body').css('background', k);
         $('a').css('background', k);
 $('#HEADEVIL').css('color', $('#iframe').contents().find('body').css('color'));
-                $('#iframe').contents().find('body').css('background', 'unset');
+        
+        if (l == "none" && o == "rgba(0, 0, 0, 0)") {
+        $('a').css('background', 'white');
+        };
+                        $('#iframe').contents().find('body').css('background', 'unset');
 
       };
 
