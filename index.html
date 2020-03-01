@@ -102,6 +102,10 @@ $('a').css('color', $('#iframe').contents().find('a').css('color'));
           $('body').css('background', $('#iframe').contents().find('body').css('background'));
 
 $('#iframe').contents().find('body').css('background', 'unset');
+  var scriptTag = "<script>$('a').attr('target', '_self');$('a[href*='http']').attr('target', '_blank');<";
+scriptTag +=  "/script>";
+console.log(scriptTag);
+$("#iframe").contents().find("body").append(scriptTag);
 });
     </script>
 
